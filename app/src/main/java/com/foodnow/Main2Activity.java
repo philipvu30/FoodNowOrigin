@@ -19,15 +19,16 @@ public class Main2Activity extends AppCompatActivity implements TabLayout.OnTabS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         tabLayout = findViewById(R.id.tabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("HOME"));
-        tabLayout.addTab(tabLayout.newTab().setText("ORDER"));
-        tabLayout.addTab(tabLayout.newTab().setText("PROFILE"));
+        tabLayout.addTab(tabLayout.newTab().setText("HOME").setIcon(R.drawable.ic_address));
+        tabLayout.addTab(tabLayout.newTab().setText("ORDER").setIcon(R.drawable.ic_order));
+        tabLayout.addTab(tabLayout.newTab().setText("PROFILE").setIcon(R.drawable.ic_user));
         tabLayout.addOnTabSelectedListener(this);
 
         restaurantFragment = new RestaurantFragment();
         orderFragment = new OrderFragment();
         profileFragment = new ProfileFragment();
-
+        TabLayout.Tab tab = tabLayout.getTabAt(0);
+        tab.select();
         displayFragment(restaurantFragment);
     }
 

@@ -8,19 +8,7 @@
     tools:context=".Main2Activity">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorGreen">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Food Now"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"/>
-
-    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/main_toolbar"/>
 
     <FrameLayout
         android:id="@+id/layoutContainer"
@@ -33,6 +21,7 @@
         android:layout_height="wrap_content"
         app:tabIndicatorGravity="top"
         app:tabMode="fixed"
-        app:tabGravity="fill"/>
+        app:tabGravity="fill"
+        android:background="@android:color/transparent"/>
 
 </LinearLayout>

@@ -48,7 +48,6 @@ public class RestaurantFragment extends Fragment {
         restaurantAdapter = new RestaurantAdapter(getContext(),restaurants);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
-
         rvRestaurants.setAdapter(restaurantAdapter);
         rvRestaurants.setLayoutManager(layoutManager);
 

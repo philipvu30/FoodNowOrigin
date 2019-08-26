@@ -13,8 +13,9 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/ic_camera"/>
         <EditText
@@ -25,6 +26,7 @@
             android:inputType="textPersonName"
             android:text="Full Name"
             android:drawableLeft="@drawable/ic_user"
+            android:layout_margin="8dp"
             android:drawablePadding="16dp"/>
 
         <EditText
@@ -34,6 +36,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Email"
+            android:layout_margin="8dp"
             android:drawableLeft="@drawable/icon_email"
             android:drawablePadding="16dp"/>
 
@@ -43,6 +46,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:layout_margin="8dp"
             android:text="Phone"
             android:drawableLeft="@drawable/ic_phone"
             android:drawablePadding="16dp"/>
@@ -51,6 +55,7 @@
             android:id="@+id/editText6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Address"

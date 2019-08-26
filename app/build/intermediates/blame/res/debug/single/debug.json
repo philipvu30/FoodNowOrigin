@@ -352,6 +352,10 @@
         "source": "C:\\Users\\Toan\\.gradle\\caches\\transforms-2\\files-2.1\\d3d39f63ef34349a1d076c96158098d4\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Toan\\Desktop\\FoodNow\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_toolbar.xml.flat",
+        "source": "C:\\Users\\Toan\\Desktop\\FoodNow\\app\\src\\main\\res\\layout\\main_toolbar.xml"
+    },
+    {
         "merged": "C:\\Users\\Toan\\Desktop\\FoodNow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\Toan\\.gradle\\caches\\transforms-2\\files-2.1\\d3d39f63ef34349a1d076c96158098d4\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },

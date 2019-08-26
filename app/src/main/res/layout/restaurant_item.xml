@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
-<ImageView
-    android:id="@+id/imgRestaurantNameItem"
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:src="@drawable/ic_circlek"/>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvRestaurantNameItem"
-            android:text="Circle K"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvRestaurantAddressItem"
-            android:text="40 Hung Vuong"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/imgRestaurantNameItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_circlek"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRestaurantNameItem"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Circle K"
+                android:paddingLeft="8dp"
+                android:textColor="@color/colorGreen"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRestaurantAddressItem"
+                android:paddingLeft="8dp"
+                android:text="40 Hung Vuong"/>
+        </LinearLayout>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_green_light"/>
+
 </LinearLayout>
