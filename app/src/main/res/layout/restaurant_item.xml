@@ -9,7 +9,7 @@
         android:orientation="horizontal"
         android:padding="8dp">
         <ImageView
-            android:id="@+id/imgRestaurantNameItem"
+            android:id="@+id/imgRestaurant"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_circlek"/>
@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvRestaurantNameItem"
+                android:id="@+id/tvRestaurantName"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:text="Circle K"
@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvRestaurantAddressItem"
+                android:id="@+id/tvAddress"
                 android:paddingLeft="8dp"
                 android:text="40 Hung Vuong"/>
         </LinearLayout>

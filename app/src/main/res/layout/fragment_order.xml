@@ -35,7 +35,7 @@
                 android:layout_margin="8dp"
                 android:src="@drawable/ic_food"/>
             <TextView
-                android:id="@+id/tvOrderRestaurantName"
+                android:id="@+id/tvRestaurantName"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_margin="8dp"
@@ -54,7 +54,7 @@
                 android:layout_margin="8dp"
                 android:src="@drawable/ic_map"/>
             <TextView
-                android:id="@+id/tvOrderAddress"
+                android:id="@+id/tvAddress"
                 android:layout_width="match_parent"
                 android:layout_margin="8dp"
                 android:layout_height="20dp"
