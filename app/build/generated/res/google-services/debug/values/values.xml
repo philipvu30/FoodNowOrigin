@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">944049322892-9ckpu8je9trllg60e0l1i54f6eslrq1i.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://foodnow-67a25.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">944049322892</string>
+    <string name="google_api_key" translatable="false">AIzaSyAH3G0me7KZiroe7dhDM4zbmrcLqMVq0mM</string>
+    <string name="google_app_id" translatable="false">1:944049322892:android:0553540fb8c83ec7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAH3G0me7KZiroe7dhDM4zbmrcLqMVq0mM</string>
+    <string name="google_storage_bucket" translatable="false">foodnow-67a25.appspot.com</string>
+    <string name="project_id" translatable="false">foodnow-67a25</string>
+</resources>
