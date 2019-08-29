@@ -1,5 +1,6 @@
 package com.foodnow;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -50,6 +51,26 @@ public class RestaurantFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
         rvRestaurants.setAdapter(restaurantAdapter);
         rvRestaurants.setLayoutManager(layoutManager);
+
+        restaurantAdapter.setListener(new RestaurantAdapter.OnItemClickListener() {
+            @Override
+            public void OnClick(View v, int position) {
+                Intent intent = new Intent(getContext(),OrderActivity.class);
+                ArrayList<Food> menu = new ArrayList<>();
+                menu.add(new Food("Bánh mì",R.drawable.ic_banh_mi,12000));
+                menu.add(new Food("Black Coffee",R.drawable.ic_black_coffee,35000));
+                menu.add(new Food("Milk Tea",R.drawable.ic_milk_tea,30000));
+                menu.add(new Food("Long Tea",R.drawable.ic_milk_tea,40000));
+                menu.add(new Food("Hỏa Tea",R.drawable.ic_milk_tea,50000));
+/*                Bundle extra = new Bundle();
+                extra.putSerializable("menu",menu);
+                extra.putString("restaurant",restaurants.get(position).getName());
+                extra.putString("address",restaurants.get(position).getAddress());
+                extra.putString("openhours",restaurants.get(position).getOpenHours());*/
+                //intent.putExtras(extra);
+                startActivity(intent);
+            }
+        });
 
     }
 }

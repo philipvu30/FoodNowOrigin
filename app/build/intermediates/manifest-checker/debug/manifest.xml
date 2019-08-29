@@ -19,15 +19,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.foodnow.Main2Activity" >
+        </activity>
+        <activity android:name="com.foodnow.OrderActivity" >
+        </activity>
+        <activity android:name="com.foodnow.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name="com.foodnow.OrderActivity" >
-        </activity>
-        <activity android:name="com.foodnow.MainActivity" >
         </activity>
 
         <provider

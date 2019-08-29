@@ -1162,7 +1162,7 @@ id imageView5
 id imageView6
 id imgCover
 id imgFoodName
-id imgRestaurantNameItem
+id imgRestaurant
 id info
 id invisible
 id italic
@@ -1285,13 +1285,9 @@ id tvFoodName
 id tvFoodPrice
 id tvForgot
 id tvOpenHours
-id tvOrderAddress
 id tvOrderCash
 id tvOrderID
-id tvOrderRestaurantName
-id tvRestaurantAddressItem
 id tvRestaurantName
-id tvRestaurantNameItem
 id tvSignInFB
 id tvSignInGG
 id uniform

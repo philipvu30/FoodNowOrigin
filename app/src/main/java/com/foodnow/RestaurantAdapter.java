@@ -17,6 +17,16 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     Context context;
     ArrayList<Restaurant> restaurants;
 
+
+    public interface OnItemClickListener{
+        void OnClick(View v, int position);
+    }
+
+    OnItemClickListener listener;
+
+    public void setListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
     public RestaurantAdapter(Context context, ArrayList<Restaurant> restaurants) {
         this.context = context;
         this.restaurants = restaurants;
@@ -31,7 +41,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RestaurantVH holder, int position) {
+    public void onBindViewHolder(@NonNull RestaurantVH holder, final int position) {
         Restaurant restaurant = restaurants.get(position);
         holder.tvRestaurantAddressItem.setText(restaurant.getAddress());
         holder.tvRestaurantNameItem.setText(restaurant.getName());
@@ -39,7 +49,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                listener.OnClick(view,position);
             }
         });
     }
@@ -56,9 +66,9 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Re
 
         public RestaurantVH(@NonNull View itemView) {
             super(itemView);
-            imgRestaurantNameItem = itemView.findViewById(R.id.imgRestaurantNameItem);
-            tvRestaurantNameItem = itemView.findViewById(R.id.tvRestaurantNameItem);
-            tvRestaurantAddressItem = itemView.findViewById(R.id.tvRestaurantAddressItem);
+            imgRestaurantNameItem = itemView.findViewById(R.id.imgRestaurant);
+            tvRestaurantNameItem = itemView.findViewById(R.id.tvRestaurantName);
+            tvRestaurantAddressItem = itemView.findViewById(R.id.tvAddress);
         }
     }
 
