@@ -7,9 +7,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 
 public class OrderActivity extends AppCompatActivity {
+
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+
+    FirebaseRecyclerOptions<Restaurant> options;
 
     RecyclerView rvOrderContent;
     ArrayList<Food> menu;
@@ -20,6 +30,10 @@ public class OrderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference("FOODNOW_DATABASE");
+
         tvRestaurantName = findViewById(R.id.tvRestaurantName);
         tvAddress = findViewById(R.id.tvAddress);
         tvOpenHours = findViewById(R.id.tvOpenHours);

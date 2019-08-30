@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Toan\\Desktop\\FoodNow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "E:\\FoodNow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Toan\\.gradle\\caches\\transforms-2\\files-2.1\\d3d39f63ef34349a1d076c96158098d4\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\TOAN\\.gradle\\caches\\transforms-2\\files-2.1\\754bddacb8b8016dbdbe334c25ef803c\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

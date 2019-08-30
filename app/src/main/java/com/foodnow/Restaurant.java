@@ -3,6 +3,7 @@ package com.foodnow;
 import java.util.ArrayList;
 
 public class Restaurant {
+
     String name;
     int logo;
     int cover;
