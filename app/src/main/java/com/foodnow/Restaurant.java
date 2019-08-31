@@ -10,14 +10,14 @@ public class Restaurant {
     String address;
     String openHours;
     ArrayList<Food> menu;
-    String ID;
+    String id;
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setID(String id) {
+        this.id = id;
     }
 
     public String getID() {
-        return ID;
+        return id;
     }
 
     public String getName() {

@@ -53,7 +53,11 @@ public class RestaurantFragment extends Fragment {
 
         restaurants = new ArrayList<>();
         databaseReference = FirebaseDatabase.getInstance().getReference("FOODNOW_DATABASE");
+        restaurantAdapter = new RestaurantAdapter(getContext(),restaurants);
 
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
+        rvRestaurants.setAdapter(restaurantAdapter);
+        rvRestaurants.setLayoutManager(layoutManager);
         databaseReference.child("Restaurant").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -91,11 +95,7 @@ public class RestaurantFragment extends Fragment {
 
 
 
-        restaurantAdapter = new RestaurantAdapter(getContext(),restaurants);
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false);
-        rvRestaurants.setAdapter(restaurantAdapter);
-        rvRestaurants.setLayoutManager(layoutManager);
 
 /*        ArrayList<Food> menu = new ArrayList<>();
 
