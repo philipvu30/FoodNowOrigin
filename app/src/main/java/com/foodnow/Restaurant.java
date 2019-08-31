@@ -10,6 +10,15 @@ public class Restaurant {
     String address;
     String openHours;
     ArrayList<Food> menu;
+    String ID;
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getID() {
+        return ID;
+    }
 
     public String getName() {
         return name;
@@ -38,6 +47,9 @@ public class Restaurant {
         this.address = address;
         this.openHours = openHours;
     }
+
+    public Restaurant()
+    {}
 
     public void setMenu(ArrayList<Food> menu) {
         this.menu = menu;

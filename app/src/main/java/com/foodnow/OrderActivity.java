@@ -39,15 +39,13 @@ public class OrderActivity extends AppCompatActivity {
         tvOpenHours = findViewById(R.id.tvOpenHours);
 
         rvOrderContent = findViewById(R.id.rvOrderContent);
-        Bundle extra = getIntent().getExtras();
-        menu = (ArrayList<Food>) extra.getSerializable("menu");
 
-        foodAdapter = new FoodAdapter(OrderActivity.this,menu);
+     /*   foodAdapter = new FoodAdapter(OrderActivity.this,menu);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(OrderActivity.this,RecyclerView.VERTICAL,false);
         rvOrderContent.setAdapter(foodAdapter);
         rvOrderContent.setLayoutManager(layoutManager);
         tvRestaurantName.setText(extra.getString("restaurant"));
         tvAddress.setText(extra.getString("address"));
-        tvOpenHours.setText(extra.getString("openhours"));
+        tvOpenHours.setText(extra.getString("openhours"));*/
     }
 }

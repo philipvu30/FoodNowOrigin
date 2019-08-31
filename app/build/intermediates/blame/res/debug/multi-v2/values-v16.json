@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\FoodNow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Toan\\Desktop\\FoodNow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\TOAN\\.gradle\\caches\\transforms-2\\files-2.1\\754bddacb8b8016dbdbe334c25ef803c\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Toan\\.gradle\\caches\\transforms-2\\files-2.1\\751d8f59de25cf8ffe9eb6510755ed2c\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\TOAN\\.gradle\\caches\\transforms-2\\files-2.1\\f0d9f25d5cee0f53d81ce850f014ce09\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Toan\\.gradle\\caches\\transforms-2\\files-2.1\\e44bf778a96cbc57a39cd02a32b6b4fe\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

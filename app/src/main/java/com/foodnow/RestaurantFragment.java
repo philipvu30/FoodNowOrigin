@@ -107,17 +107,17 @@ public class RestaurantFragment extends Fragment {
 
         for(Restaurant res : restaurants)
         {
+            String ID = databaseReference.push().getKey();
+            res.setID(ID);
             res.setMenu(menu);
             databaseReference.child("Restaurant").push().setValue(res);
         }*/
-
-
-
 
         restaurantAdapter.setListener(new RestaurantAdapter.OnItemClickListener() {
             @Override
             public void OnClick(View v, int position) {
                 Intent intent = new Intent(getContext(),OrderActivity.class);
+
                 startActivity(intent);
             }
         });

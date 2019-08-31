@@ -34,4 +34,5 @@ public class Food {
         this.image = image;
         this.price = price;
     }
+    public  Food(){}
 }
